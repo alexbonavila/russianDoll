@@ -8,7 +8,11 @@ class CardsController extends Controller
 {
     public function index()
     {
-        $cards = Card::all(); 
+//        $cards = \Cache::remember('cards',5,function (){
+//            $cards = Card::with('notes')->get();
+//        });
+
+        $cards = Card::all();
 
         return view('cards.index', compact('cards'));
     }

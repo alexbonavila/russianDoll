@@ -5,7 +5,7 @@
 
     <div class="cards">
         @foreach ($cards as $card)
-            @include ('cards/_card') 
+            @include ('cards/_card')
         @endforeach
     </div>
 @stop

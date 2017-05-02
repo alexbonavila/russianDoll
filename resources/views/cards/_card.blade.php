@@ -50,9 +50,11 @@
     </div>
 
     <div class="content">
+      <ul>
         @foreach ($card->notes as $note)
             @include ('cards/_note')
         @endforeach
+      </ul>
     </div>
   </div>
 </div>
