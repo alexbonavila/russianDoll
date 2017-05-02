@@ -12,8 +12,9 @@ class CardsController extends Controller
 //            $cards = Card::with('notes')->get();
 //        });
 
-        $cards = Card::all();
+        $cards = Card::with('notes')->get();
 
         return view('cards.index', compact('cards'));
+
     }
 }
